@@ -15,6 +15,9 @@ Pandas, Python, Flask, Tableau, Javascript, Scikit-Learn
 # Team members:
 Calogera McCormick, Aaron Lilleoien, Minta Burke, Sana Ayubzai, Tawn Scotton
 
+# Hypotheses
+# Project Parts: Cleanign, Analyis, Modeling, Prediction
+
 # Dataset description
 original csv: ds_salaries.csv
 CSV includes 11 columns and ***37XX?? rows.
@@ -116,11 +119,34 @@ Research Scientist
 The salary column is removed from the refined cav.  THe analysis will be performed on the salary_in_usd field.
 ### salary_currency
 The salary_currency column is removed from the refined cav.  THe analysis will be performed on the salary_in_usd field.
-salary_in_usd
-![Uploading image.png…]()
+### salary_in_usd
+Bins werw created in ranges of 50K USD.  Codes for the salary are 1-8 and are stored in salary_in_usd
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/bb916af9-42df-4615-aead-4d56c55fe942)
+### employee_residence
+must equal US
+### remote_ratio
+no edit to the field
+### company_location
+No change to the field.  After filtering for residence=US and year=2023, all entries in this field were US.  
+The salary column is removed from the refined cav. 
+### comany_size
+company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
+Codes were stored in a new variable called company_size_code.
+
+### Refined csv: 
+dsroles_us_2023
+Number of rows: *** # of rows
+Number of columns: *** # of columns (include index)
+
+# limitation
+we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
+
+# Hypotheses - What questions do we plan to answer
+- WHat salary can you predict given a job title.  
+- What titles can you predict given a salary range
+- What job level is predicted based on salary range
 
 
-Juptyer notebook name: xxxxxxxx
-csv: dsroles_us_2023
-
-limitation - we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
+# ANALYSES
+# Tableau stuff
+# MODELING
