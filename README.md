@@ -5,8 +5,9 @@ Modeling of data science salaries for US-based workers in 1Q2023
 Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023
 aijobs.net
 update*** database is updated annualy, last update was updated 2 months ago
-Based on updated date as per Kaggle and the date accessed, we assumed the database included data from Jan 2023 to Mar 2023 (1Q2023).
-Assumption - data are based on user submission of job/salary information
+Based on updated date as per Kaggle and the date accessed, we assumed the database included data from Jan 2023 to Mar 2023 (1Q2023)
+Data are based on user submission of job/salary information.
+Original csv: ds_strings.csv
 
 # Tools:
 Pandas, Python, Flask, Tableau, Javascript, Scikit-Learn
@@ -14,9 +15,9 @@ Pandas, Python, Flask, Tableau, Javascript, Scikit-Learn
 # Team members:
 Calogera McCormick, Aaron Lilleoien, Minta Burke, Sana Ayubzai, Tawn Scotton
 
-# Refinement of the dataset
-We inspected the csv.
-CSV includes 11 columns
+# Dataset description
+original csv: ds_salaries.csv
+CSV includes 11 columns and ***37XX?? rows.
 - work_year: The year the salary was paid.
 - experience_level: The experience level in the job during the year
 - employment_type: The type of employment for the role
@@ -29,9 +30,97 @@ CSV includes 11 columns
 - company_location: The country of the employer's main office or contracting branch
 - company_size: The median number of people that worked for the company during the year
 
+# Dataset refinement
+We inspected the csv.
 We used Python in a Jupyter notebook (***ADD NAME HERE) 
 
-- to reduce the dataset to include only row for employees residing in the US 
-- to limit rows to job postings to year 2023
-- 
-dsroles_us_2023
+The original csv was imported into the notebook and refined using Pandas.  Data were limited to preselected parameters.  Variables that were strings were coded to numerical codes to faciliate the machine learning. The job titles were grouped into categories.  Note, there were 93 job titles in the original dataset and this reduced to 44 for roles where the employee resided in the US.
+### work_year
+work_year was limited to 2023
+### experience_level
+experience_level (EN, MI, SE, and EX) for entry-level, mid-level, senior-level and executive were coded to 1, 2, 3, and 4, respectively
+Codes were stored in a new variable called experience_level_code.
+### employment_type
+employment_type (CT, FT, and PT) for contractor, full time and part time were coded to 1, 2, and 3
+Codes were stored in a new variable called employment_type_code.
+### job_title
+Job titles were condensed from 44 unique titles to 8 job title categories.  THe job categories are: 
+- Data Analyst
+- Data Architect
+- Data Engineer
+- Data Manager
+- Data Scientist
+- Developer
+- Other
+- Scientist
+
+The job titles in the DATA ANALYST job_title_category are below.  Code for Data Analyst is 1.
+Data Analytics Manager
+Business Data Analyst
+Data Quality Analyst
+Lead Data Analyst
+Financial Data Analyst
+BI Analyst
+Data Analytics Specialist
+
+The job titles in the DATA ARCHITECT job_title_category are below.  Code for Data Architect is 2.
+Data Architect
+Data Modeler
+
+The job titles in the DATA ENGINEER job_title_category are below.  Code for Data Engineer is 3.
+Analytics Engineer
+Applied Machine Learning Engineer
+BI Data Engineer
+Business Intelligence Engineer
+Cloud Database Engineer
+Computer Vision Engineer
+Data Engineer
+Data Infrastructure Engineer
+Data Operations Engineer
+Deep Learning Engineer
+Machine Learning Engineer
+Machine Learning Infrastructure Engineer
+Machine Learning Software Engineer
+ML Engineer
+MLOps Engineer
+NLP Engineer
+Research Engineer
+
+The job titles in the DATA MANAGER job_title_category are below.  Code for Data Manager is 4.
+Data Manager
+
+The job titles in the DATA SCIENTIST job_title_category are below.  Code for Data Scientist is 5.
+Data Scientist
+Data Science Manager
+Director of Data Science
+Machine Learning Scientist
+Applied Machine Learning Scientist
+Data Science Consultant
+Data Science Lead
+Data Science Engineer
+
+The job titles in the DEVELOPER job_title_category are below.  Code for Developer is 6.
+AI Developer
+BI Developer
+
+The job titles in the OTHER job_title_category are below.  Code for Other is 7.
+Head of Data
+Data Specialist
+Head of Data Science
+Data Lead
+
+The job titles in the SCIENTIST job_title_category are below.  Code for Scientist is 8.
+Applied Scientist
+Research Scientist
+### salary
+The salary column is removed from the refined cav.  THe analysis will be performed on the salary_in_usd field.
+### salary_currency
+The salary_currency column is removed from the refined cav.  THe analysis will be performed on the salary_in_usd field.
+salary_in_usd
+![Uploading image.png…]()
+
+
+Juptyer notebook name: xxxxxxxx
+csv: dsroles_us_2023
+
+limitation - we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
