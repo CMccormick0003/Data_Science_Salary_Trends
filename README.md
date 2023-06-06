@@ -10,7 +10,7 @@ Data are based on user submission of job/salary information.
 Original csv: ds_strings.csv
 
 # Tools:
-Pandas, Python, Flask, Tableau, Javascript, Scikit-Learn
+Pandas, Python, Flask, Tableau, Scikit-Learn, Matplotlib
 
 # Team members:
 Calogera McCormick, Aaron Lilleoien, Minta Burke, Sana Ayubzai, Tawn Scotton
