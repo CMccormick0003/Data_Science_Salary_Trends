@@ -136,7 +136,7 @@ Codes were stored in a new variable called company_size_code.
 ### Refined csv: 
 DSRoles_US_2023.csv
 Number of rows: 1565 rows
-Number of columns: 6 # of columns (eemployment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
+Number of columns: 7 (index, employment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
 
 # limitation
 we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
