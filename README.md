@@ -16,11 +16,11 @@ Pandas, Python, Flask, Tableau, Javascript, Scikit-Learn
 Calogera McCormick, Aaron Lilleoien, Minta Burke, Sana Ayubzai, Tawn Scotton
 
 # Hypotheses
-# Project Parts: Cleanign, Analyis, Modeling, Prediction
+# Project Parts: Cleaning, Analyis, Modeling, Prediction
 
 # Dataset description
 original csv: ds_salaries.csv
-CSV includes 11 columns and ***37XX?? rows.
+CSV includes 11 columns and 3755 rows.
 - work_year: The year the salary was paid.
 - experience_level: The experience level in the job during the year
 - employment_type: The type of employment for the role
@@ -35,9 +35,9 @@ CSV includes 11 columns and ***37XX?? rows.
 
 # Dataset refinement
 We inspected the csv.
-We used Python in a Jupyter notebook (***ADD NAME HERE) 
+We used Python in a Jupyter notebook (***DataScientistRoles_DSRoles06052023.ipynb) 
 
-The original csv was imported into the notebook and refined using Pandas.  Data were limited to preselected parameters.  Variables that were strings were coded to numerical codes to faciliate the machine learning. The job titles were grouped into categories.  Note, there were 93 job titles in the original dataset and this reduced to 44 for roles where the employee resided in the US.
+The original csv (ds_salaries.csv) was imported into the notebook and refined using Pandas.  Data were limited to preselected parameters.  Variables that were strings were coded to numerical codes to faciliate the machine learning. The job titles were grouped into categories.  Note, there were 93 job titles in the original dataset and this reduced to 44 for roles where the employee resided in the US.
 ### work_year
 work_year was limited to 2023
 ### experience_level
@@ -134,9 +134,9 @@ company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
 Codes were stored in a new variable called company_size_code.
 
 ### Refined csv: 
-dsroles_us_2023
-Number of rows: *** # of rows
-Number of columns: *** # of columns (include index)
+DSRoles_US_2023.csv
+Number of rows: 1565 rows
+Number of columns: 6 # of columns (eemployment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
 
 # limitation
 we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
@@ -149,4 +149,7 @@ we don't knwo if the salary is salary only or includes other benefits, total com
 
 # ANALYSES
 # Tableau stuff
-# MODELING
+# MODELING - forest
+
+# learning
+initial model was linear regression, however since the y dependent variable was to be predicted into 8 binds or categories, we changed to a forange of rest plot.  The data we aim to predict for salary is categorical, not continuous (eg, range of $101,000 to $150,000, not $123,456)
