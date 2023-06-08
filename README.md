@@ -47,15 +47,13 @@ Codes were stored in a new variable called experience_level_code.
 employment_type (CT, FT, and PT) for contractor, full time and part time were coded to 1, 2, and 3
 Codes were stored in a new variable called employment_type_code.
 ### job_title
-Job titles were condensed from 44 unique titles to 8 job title categories.  THe job categories are: 
+Job titles were condensed from 44 unique titles to 6 job title categories.  THe job categories are: 
 - Data Analyst
-- Data Architect
 - Data Engineer
-- Data Manager
-- Data Scientist
-- Developer
-- Other
-- Scientist
+- Analytics Engineer
+- Machine Learning Role
+- Data Scientis
+- Data Architect
 
 The job titles in the DATA ANALYST job_title_category are below.  Code for Data Analyst is 1.
 Data Analytics Manager
@@ -115,6 +113,7 @@ Data Lead
 The job titles in the SCIENTIST job_title_category are below.  Code for Scientist is 8.
 Applied Scientist
 Research Scientist
+
 ### salary
 The salary column is removed from the refined cav.  THe analysis will be performed on the salary_in_usd field.
 ### salary_currency
@@ -133,23 +132,23 @@ The salary column is removed from the refined cav.
 company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
 Codes were stored in a new variable called company_size_code.
 
-### Refined csv: 
+### Refined csv:   UPDATE THIS, EXPLAIN PROCESS OF REFINING -- csv 1565 rows, 8 job titles but model was under 20%.  Updated to 6 titles, # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
 DSRoles_US_2023.csv
 Number of rows: 1565 rows
 Number of columns: 7 (index, employment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
 
 # limitation
-we don't knwo if the salary is salary only or includes other benefits, total compensation or salary only
+we don't know if the salary is salary only or includes other benefits, total compensation or salary only
 
 # Hypotheses - What questions do we plan to answer
-- WHat salary can you predict given a job title.  
-- What titles can you predict given a salary range
-- What job level is predicted based on salary range
+- What salary can you predict given a job title.  ***Given the 4 entries by the user, the model predicts a salary range.  Job experience, job tile, remote and company size
+- What titles can you predict given a salary range.  ** can't answer this with the 
+- What job level is predicted based on salary range  ** can't answer this with the
 
 
 # ANALYSES
 # Tableau stuff
-# MODELING - forest
+# MODELING - forest or logistic regression
 
 # learning
 initial model was linear regression, however since the y dependent variable was to be predicted into 8 binds or categories, we changed to a forange of rest plot.  The data we aim to predict for salary is categorical, not continuous (eg, range of $101,000 to $150,000, not $123,456)
@@ -165,3 +164,15 @@ We updated the model futher.  The job title were ungrouped and we used the follo
 - Data Engineer (n=XX)
 - Data Scientist (n=XX)
 - Machine Learning (includes job titles Machine Learning Engineer, ML Engineer, Machine Learning Infrastructure Engineer) (n=XX)
+
+# Prediction
+Explain development of Flask app
+Explain that user enters criteria 
+Explain that the website shows an output -- 
+
+IMAGES
+Tableau - # jobs per job title from original data
+Tableau - show not balanced for some columns, reason why they were not included in the model
+model precision/accuracy/recall/F1 table
+from app, show data entry and predicted salary - example 1 data scientist, remote, entry level, big
+from app, show data entry and predicted salary - example 1 ML, zero remote, mid level, small
