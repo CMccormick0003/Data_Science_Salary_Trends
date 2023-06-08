@@ -154,4 +154,14 @@ we don't knwo if the salary is salary only or includes other benefits, total com
 # learning
 initial model was linear regression, however since the y dependent variable was to be predicted into 8 binds or categories, we changed to a forange of rest plot.  The data we aim to predict for salary is categorical, not continuous (eg, range of $101,000 to $150,000, not $123,456)
 
-THe model was run several ways.  To work on improving accuracy of the model, we modified the model parameters by revising the grouping or revising which fields to include.  For example, the model was run with 8 categories for salaries in 50 K increments from 1 as <=50K USD to 8 as >=350K USD to be 4 categories in 100 K increments (1 as <= 100 K USD to 4 as >= 301K USD).  Another modification was shifting from 9 categories for job title (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other, and Scientist) to be 7 categories (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other) by combining Data Scientist and Scientist into one category.
+THe model was run several ways.  To work on improving accuracy of the model, we modified the model parameters by revising the grouping or revising which fields to include.  For example, the model was run with 8 categories for salaries in 50 K increments from 1 as <=50K USD to 8 as >=350K USD to be 4 categories in 100 K increments (1 as <= 100 K USD to 4 as >= 301K USD).  
+
+Another modification was shifting from 9 categories for job title (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other, and Scientist) to be 7 categories (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other) by combining Data Scientist and Scientist into one category.
+
+We updated the model futher.  The job title were ungrouped and we used the following job titles where the joob name matched exactley to the terms below.  This reduced the dataframe from 15XX rows to XXX rows.
+- Analytics Engineer (n=XX)
+- Data Analyst (n=XX)
+- Data Architect (n=XX)
+- Data Engineer (n=XX)
+- Data Scientist (n=XX)
+- Machine Learning (includes job titles Machine Learning Engineer, ML Engineer, Machine Learning Infrastructure Engineer) (n=XX)
