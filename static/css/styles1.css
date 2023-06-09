@@ -13,7 +13,7 @@
     height: 50px;
     margin: 15px;
     border:none;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 label {
@@ -55,9 +55,17 @@ p {
     border-radius: 60px;
     padding: 20px;
     margin: 0px;
+<<<<<<< HEAD:static/css/styles1.css
     
     background-color:rgb(209, 122, 7);
     color: rgb(232, 231, 236);
+=======
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s;
+    background-color:rgb(0, 0, 255);
+    color: white;
+>>>>>>> c9546cd675f3fa26b5c7bb2a09f770a872c4838c:static/css/styles.css
     text-align: center;
     font-weight: 800;
    
