@@ -12,12 +12,11 @@
 	    </div>
 	</header>
         <div class="container">
-            <img src="https://media.giphy.com/media/xT39DkL2ZGZHA0Qr1S/giphy.gif"/>
-
+            
             <form action="/predict" method="POST" class="form">
                 <div class="fieldset">
                     <label>Enter Your Experience Level. <br>Entry = 1 <br>Middle = 2<br> Senior = 3<br> Expert = 4</label>
-                    <input class="exp" name="exp"/>
+                    <input class="exp" name="exp" type="number" max="4" min="1"/>
                 </div>
                 <div class="fieldset">
                     <label>Enter the number for the Job Title<br>
@@ -27,21 +26,21 @@
                         4 Machine Learning Engineer<br>
                         5 Data Scientist<br>
                         6 Data Architect</label>
-                    <input class="job" name="job"/>
+                    <input class="job" name="job" type="number" max="6" min="1"/>
                 </div>
                 <div class="fieldset">
                     <label>Enter Your Remote Ratio<br>
                     Fully Remote = 100<br>
                     Hybrid = 50<br>
                     In Office = 0</label>
-                    <input class="remote" name="remote"/>
+                    <input class="remote" name="remote" type="number"/>
                 </div>
                 <div class="fieldset">
                     <label>Enter Your Company Size<br>
                     Small enter 1<br>
                     Medium enter 2<br>
                     Large enter 3</label>
-                    <input class="size" name="size"/>
+                    <input class="size" name="size" type="number" max="3" min="1"/>
                 </div>
                 <input type="submit" class="button" value="predict">
             </form>
