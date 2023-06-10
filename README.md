@@ -9,7 +9,7 @@ Based on updated date as per Kaggle and the date accessed, we assumed the databa
 Data are based on user submission of job/salary information.
 Original csv: ds_strings.csv
 
-# Tools:
+#  Packages:
 Pandas, Python, Flask, Tableau, Scikit-Learn, Matplotlib
 
 # Team members:
