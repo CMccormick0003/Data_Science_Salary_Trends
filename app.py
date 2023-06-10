@@ -18,6 +18,10 @@ model = pickle.load(open('./model.pkl','rb'))
 def home():
     return render_template("index.html")
 
+@app.route('/tab')
+def tab():
+    return render_template("tab.html")
+
 
 @app.route('/predict',methods=['POST'])
 def predict():

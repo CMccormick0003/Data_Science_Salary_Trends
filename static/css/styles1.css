@@ -4,7 +4,7 @@
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(252, 255, 80);
+    background-color: rgb(80, 185, 255);
 }
 
 .exp {
@@ -73,7 +73,7 @@ p {
 
 
 h1 {
-    color: red; 
+    color: rgb(255, 255, 0); 
     text-align: center;
   }
 
