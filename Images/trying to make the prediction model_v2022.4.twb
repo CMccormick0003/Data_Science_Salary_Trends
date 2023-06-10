@@ -1,0 +1,1085 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='DSRoles_US_2023 (1) (1)' inline='true' name='federated.0j2jstq1rwvz7q19ofjhd09p5oav' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DSRoles_US_2023 (1) (1)' name='textscan.1t1jg7s01qy2sf1912fa41g9bucb'>
+            <connection class='textscan' directory='C:/Users/tscot/Downloads' filename='DSRoles_US_2023 (1) (1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1t1jg7s01qy2sf1912fa41g9bucb' name='DSRoles_US_2023 (1) (1).csv' table='[DSRoles_US_2023 (1) (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='employment_type_code' ordinal='1' />
+            <column datatype='integer' name='experience_level_code' ordinal='2' />
+            <column datatype='integer' name='job category code' ordinal='3' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+            <column datatype='integer' name='company_size_code' ordinal='5' />
+            <column datatype='integer' name='remote_ratio' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1t1jg7s01qy2sf1912fa41g9bucb' name='DSRoles_US_2023 (1) (1).csv' table='[DSRoles_US_2023 (1) (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='employment_type_code' ordinal='1' />
+            <column datatype='integer' name='experience_level_code' ordinal='2' />
+            <column datatype='integer' name='job category code' ordinal='3' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+            <column datatype='integer' name='company_size_code' ordinal='5' />
+            <column datatype='integer' name='remote_ratio' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_type_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[employment_type_code]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>employment_type_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>experience_level_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[experience_level_code]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>experience_level_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job category code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[job category code]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>job category code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd_code]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>salary_in_usd_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[company_size_code]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>company_size_code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_ratio]</local-name>
+            <parent-name>[DSRoles_US_2023 (1) (1).csv]</parent-name>
+            <remote-alias>remote_ratio</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='DSRoles_US_2023 (1) (1).csv' datatype='table' name='[__tableau_internal_object_id__].[DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256]' role='measure' type='quantitative' />
+      <column caption='Company Size Code' datatype='integer' name='[company_size_code]' role='dimension' type='ordinal' />
+      <column caption='Employment Type Code' datatype='integer' name='[employment_type_code]' role='dimension' type='ordinal' />
+      <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+      <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+      <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+      <column caption='Salary In Usd Code' datatype='integer' name='[salary_in_usd_code]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DSRoles_US_2023 (1) (1).csv' id='DSRoles_US_2023 (1) (1).csv_B86AAEC210ED424DA341D85845F7A256'>
+            <properties context=''>
+              <relation connection='textscan.1t1jg7s01qy2sf1912fa41g9bucb' name='DSRoles_US_2023 (1) (1).csv' table='[DSRoles_US_2023 (1) (1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='employment_type_code' ordinal='1' />
+                  <column datatype='integer' name='experience_level_code' ordinal='2' />
+                  <column datatype='integer' name='job category code' ordinal='3' />
+                  <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+                  <column datatype='integer' name='company_size_code' ordinal='5' />
+                  <column datatype='integer' name='remote_ratio' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='DSRoles_US_2023_coded FEWER_JOB_TITLES' inline='true' name='federated.1eumfty0ahwkue13hzpoo07vdhbc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DSRoles_US_2023_coded FEWER_JOB_TITLES' name='textscan.1ga9fpc1o2syeu13omzca13pu1a2'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/tscot/desktop/Data_Science_Salary_Trends/Data_Science_Salary_Trends/Resources/DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' dataRefreshTime='' directory='C:/Users/tscot/desktop/Data_Science_Salary_Trends/Data_Science_Salary_Trends/Resources' filename='C:/Users/tscot/AppData/Local/Temp/TableauTemp/0cywjra03xewdw15xhtd10clu23u/DSRoles_US_2023_coded FEWER_JOB_TITLES.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ga9fpc1o2syeu13omzca13pu1a2' name='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' table='[DSRoles_US_2023_coded FEW#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:I1305:no:A1:I1305:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='experience_level_code' ordinal='0' />
+            <column datatype='string' name='job_title' ordinal='1' />
+            <column datatype='integer' name='job category code' ordinal='2' />
+            <column datatype='integer' name='salary_in_usd' ordinal='3' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+            <column datatype='integer' name='remote_ratio' ordinal='5' />
+            <column datatype='string' name='company_location' ordinal='6' />
+            <column datatype='string' name='company_size' ordinal='7' />
+            <column datatype='integer' name='company_size_code' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ga9fpc1o2syeu13omzca13pu1a2' name='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' table='[DSRoles_US_2023_coded FEW#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:I1305:no:A1:I1305:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='experience_level_code' ordinal='0' />
+            <column datatype='string' name='job_title' ordinal='1' />
+            <column datatype='integer' name='job category code' ordinal='2' />
+            <column datatype='integer' name='salary_in_usd' ordinal='3' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+            <column datatype='integer' name='remote_ratio' ordinal='5' />
+            <column datatype='string' name='company_location' ordinal='6' />
+            <column datatype='string' name='company_size' ordinal='7' />
+            <column datatype='integer' name='company_size_code' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I1305:no:A1:I1305:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>7824</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>experience_level_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[experience_level_code]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>experience_level_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[job_title]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>job_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job category code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[job category code]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>job category code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>salary_in_usd</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd_code]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>salary_in_usd_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_ratio]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>remote_ratio</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company_location]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>company_location</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company_size]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>company_size</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[company_size_code]</local-name>
+            <parent-name>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv]</parent-name>
+            <remote-alias>company_size_code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' datatype='table' name='[__tableau_internal_object_id__].[DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6]' role='measure' type='quantitative' />
+      <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' type='nominal' />
+      <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+      <column caption='Company Size Code' datatype='integer' name='[company_size_code]' role='dimension' type='ordinal' />
+      <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+      <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+      <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+      <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+      <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+      <column caption='Salary In Usd Code' datatype='integer' name='[salary_in_usd_code]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' id='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv_6C3E9E4BCA9F4DDEA6C8B18011AAF3F6'>
+            <properties context=''>
+              <relation connection='textscan.1ga9fpc1o2syeu13omzca13pu1a2' name='DSRoles_US_2023_coded FEWER_JOB_TITLES.csv' table='[DSRoles_US_2023_coded FEW#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:I1305:no:A1:I1305:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='experience_level_code' ordinal='0' />
+                  <column datatype='string' name='job_title' ordinal='1' />
+                  <column datatype='integer' name='job category code' ordinal='2' />
+                  <column datatype='integer' name='salary_in_usd' ordinal='3' />
+                  <column datatype='integer' name='salary_in_usd_code' ordinal='4' />
+                  <column datatype='integer' name='remote_ratio' ordinal='5' />
+                  <column datatype='string' name='company_location' ordinal='6' />
+                  <column datatype='string' name='company_size' ordinal='7' />
+                  <column datatype='integer' name='company_size_code' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES' inline='true' name='federated.1frq5ud17rnhz01gkymjl1np2mtl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES' name='textscan.0zzr05f0ryeuom1djw8c31wlc5o3'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/tscot/desktop/Data_Science_Salary_Trends/Data_Science_Salary_Trends/Resources/DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' dataRefreshTime='' directory='C:/Users/tscot/desktop/Data_Science_Salary_Trends/Data_Science_Salary_Trends/Resources' filename='C:/Users/tscot/AppData/Local/Temp/TableauTemp/15izgbg0djffyc1eyve2x16vmfal/DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0zzr05f0ryeuom1djw8c31wlc5o3' name='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' table='[DSRoles_US_2023_FEWER_JOB#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E1307:no:A1:E1307:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='experience_level_code' ordinal='0' />
+            <column datatype='integer' name='job category code' ordinal='1' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='2' />
+            <column datatype='integer' name='remote_ratio' ordinal='3' />
+            <column datatype='integer' name='company_size_code' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0zzr05f0ryeuom1djw8c31wlc5o3' name='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' table='[DSRoles_US_2023_FEWER_JOB#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E1307:no:A1:E1307:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='experience_level_code' ordinal='0' />
+            <column datatype='integer' name='job category code' ordinal='1' />
+            <column datatype='integer' name='salary_in_usd_code' ordinal='2' />
+            <column datatype='integer' name='remote_ratio' ordinal='3' />
+            <column datatype='integer' name='company_size_code' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E1307:no:A1:E1307:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>6530</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>experience_level_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[experience_level_code]</local-name>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias>experience_level_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job category code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[job category code]</local-name>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias>job category code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd_code]</local-name>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias>salary_in_usd_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_ratio]</local-name>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias>remote_ratio</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[company_size_code]</local-name>
+            <parent-name>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv]</parent-name>
+            <remote-alias>company_size_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' datatype='table' name='[__tableau_internal_object_id__].[DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C]' role='measure' type='quantitative' />
+      <column caption='Company Size Code' datatype='integer' name='[company_size_code]' role='dimension' type='ordinal' />
+      <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+      <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+      <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+      <column caption='Salary In Usd Code' datatype='integer' name='[salary_in_usd_code]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' id='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv_87F5F946337C4748A45A34D8F62E9C2C'>
+            <properties context=''>
+              <relation connection='textscan.0zzr05f0ryeuom1djw8c31wlc5o3' name='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES.csv' table='[DSRoles_US_2023_FEWER_JOB#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:E1307:no:A1:E1307:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='experience_level_code' ordinal='0' />
+                  <column datatype='integer' name='job category code' ordinal='1' />
+                  <column datatype='integer' name='salary_in_usd_code' ordinal='2' />
+                  <column datatype='integer' name='remote_ratio' ordinal='3' />
+                  <column datatype='integer' name='company_size_code' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES' name='federated.1frq5ud17rnhz01gkymjl1np2mtl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frq5ud17rnhz01gkymjl1np2mtl'>
+            <column-instance column='[job category code]' derivation='Avg' name='[avg:job category code:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary_in_usd_code]' derivation='Avg' name='[avg:salary_in_usd_code:qk]' pivot='key' type='quantitative' />
+            <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+            <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+            <column-instance column='[experience_level_code]' derivation='None' name='[none:experience_level_code:ok]' pivot='key' type='ordinal' />
+            <column caption='Salary In Usd Code' datatype='integer' name='[salary_in_usd_code]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:job category code:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:salary_in_usd_code:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]</rows>
+        <cols>([federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:job category code:qk] + [federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:salary_in_usd_code:qk])</cols>
+      </table>
+      <simple-id uuid='{11675400-7781-4297-BF80-7448BCDBD25A}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES' name='federated.1frq5ud17rnhz01gkymjl1np2mtl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frq5ud17rnhz01gkymjl1np2mtl'>
+            <column-instance column='[remote_ratio]' derivation='Avg' name='[avg:remote_ratio:qk]' pivot='key' type='quantitative' />
+            <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+            <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+            <column-instance column='[job category code]' derivation='Median' name='[med:job category code:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[remote_ratio]' derivation='Median' name='[med:remote_ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[experience_level_code]' derivation='None' name='[none:experience_level_code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[job category code]' derivation='None' name='[none:job category code:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary_in_usd_code]' derivation='None' name='[none:salary_in_usd_code:ok]' pivot='key' type='ordinal' />
+            <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+            <column caption='Salary In Usd Code' datatype='integer' name='[salary_in_usd_code]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]' field-type='quantitative' max='22.76384892086331' min='-21.336151079136691' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]' />
+              <color column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:remote_ratio:qk]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:job category code:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]' />
+              <color column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:remote_ratio:qk]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:job category code:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:remote_ratio:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]' />
+              <color column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:remote_ratio:qk]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]' />
+              <text column='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:job category code:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]</rows>
+        <cols>([federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok] * ([federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk] + [federated.1frq5ud17rnhz01gkymjl1np2mtl].[avg:remote_ratio:qk]))</cols>
+      </table>
+      <simple-id uuid='{D8C6744B-600A-4AE1-971D-6928A851CAC7}' />
+    </worksheet>
+    <worksheet name='model_job vs experience'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DSRoles_US_2023_FEWER_JOB_TITLES_FEWER_PAYRANGES' name='federated.1frq5ud17rnhz01gkymjl1np2mtl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frq5ud17rnhz01gkymjl1np2mtl'>
+            <column caption='Experience Level Code' datatype='integer' name='[experience_level_code]' role='dimension' type='ordinal' />
+            <column caption='Job Category Code' datatype='integer' name='[job category code]' role='measure' type='quantitative' />
+            <column-instance column='[experience_level_code]' derivation='None' name='[none:experience_level_code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[job category code]' derivation='Sum' name='[sum:job category code:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[sum:job category code:qk]</rows>
+        <cols>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]</cols>
+      </table>
+      <simple-id uuid='{DD597DCE-B641-4300-A27A-F826A20F6CF5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='model_job vs experience'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8E27A98D-4065-42D4-A679-23A65C9272BB}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:job category code:qk]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{812E53E1-48AD-4D45-9CD4-1E9358978DDE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:remote_ratio:qk]' type='color' />
+            <card pane-specification-id='3' param='[federated.1frq5ud17rnhz01gkymjl1np2mtl].[med:job category code:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:experience_level_code:ok]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:job category code:qk]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:remote_ratio:qk]</field>
+            <field>[federated.1frq5ud17rnhz01gkymjl1np2mtl].[none:salary_in_usd_code:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1D13EFDB-B6EC-4B86-91B2-55F6BEC983D5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='179' name='Sheet 3' width='192'>
+      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
+      gFCaBEAo7f8BCA3zkcIGonEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='model_job vs experience' width='192'>
+      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
+      JABhaf8NYOAxaMbS9HsAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
