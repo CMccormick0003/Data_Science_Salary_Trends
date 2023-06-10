@@ -23,6 +23,8 @@ def tab():
     return render_template("tab.html")
 
 
+
+
 @app.route('/predict',methods=['POST'])
 def predict():
     # Get the data from the POST request.
@@ -58,6 +60,14 @@ def predict():
 @app.route('/dsvisuals')
 def dsvisuals():
     return render_template('dsvisuals.html')
+
+@app.route('/moretableau')
+def moretableau():
+    return render_template('moretableau.html')
+
+@app.route('/evenmoretableau')
+def evenmoretableau():
+    return render_template('evenmoretableau.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
