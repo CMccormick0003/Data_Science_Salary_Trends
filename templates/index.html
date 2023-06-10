@@ -1,23 +1,29 @@
-Original Index from Aaron
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Salary Prediction for Data-Related Positions</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
-    </head>
-    <body>
+<head>
+    <title>Salary Prediction for Data-Related Positions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
+    <style>
+        body {
+            background-image: url('static/css/lukas-blazek-mcSDtbWXUZU-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>       Negotiate Compensation for Your Next Data Sciences Job<br>Enter job details & click Predict Salary to see 2023 US salary range.</h1>
 
     <header>
         <div class="container">
-            <h2>Data Related Jobs<br>Salary Predictor</h2>
+            <h2>Data Related Jobs Salary Predictor</h2>
+            <div class="container">
         </div>
-    </header>
-        <div class="container">
-            
+    </header>                  
             <form action="/predict" method="POST" class="form">
                 <div class="fieldset">
-                    <label>Enter Your Experience Level </label><br>
+                    <label>Experience Level (enter number)</label><br>
                         <div class = "options">
                             Entry = 1 <br>
                             Middle = 2<br> 
@@ -27,7 +33,7 @@ Original Index from Aaron
                     <input class="inputbox" name="exp" type="number" min="1" max="4"/>
                 </div>
                 <div class="fieldset">
-                    <label>Enter the number for the Job Title</label><br>
+                    <label>Job Title (enter number)</label><br>
                         <div class = "options">
                             1 Data Analyst <br>
                             2 Data Engineer <br>
@@ -39,7 +45,7 @@ Original Index from Aaron
                     <input class="inputbox" name="job" type="number" max="6" min="1"/>
                 </div>
                 <div class="fieldset">
-                    <label>Enter Your Remote Ratio<br>
+                    <label>Remote Ratio (Enter %)<br>
                         <div class = "options">
                             Fully Remote = 100<br>
                             Hybrid = 50<br>
@@ -48,7 +54,7 @@ Original Index from Aaron
                     <input class="inputbox" name="remote" type="number"/>
                 </div>
                 <div class="fieldset">
-                    <label>Enter Your Company Size<br>
+                    <label>Company Size (enter number)<br>
                         <div class = "options">
                             Small = 1<br>
                             Medium = 2<br>

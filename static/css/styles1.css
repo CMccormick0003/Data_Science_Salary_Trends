@@ -4,7 +4,7 @@
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(80, 135, 255);
+    background-color: rgb(252, 255, 80);
 }
 
 .exp {
@@ -68,10 +68,16 @@ p {
 >>>>>>> c9546cd675f3fa26b5c7bb2a09f770a872c4838c:static/css/styles.css
     text-align: center;
     font-weight: 800;
-   
     
 }
 
+
+h1 {
+    color: red; 
+    text-align: center;
+  }
+
+  
 .inputbox{
     width: 200px;
 }
@@ -90,3 +96,11 @@ p {
 }
 
 
+<style>
+body {
+  background-image: url('static', filename='lukas-blazek-mcSDtbWXUZU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
