@@ -37,7 +37,7 @@ def predict():
         output = prediction[0]
         results = ""
         if output == 1:
-            results = "$0 - $100K"
+            results = "$40 - $100K"
         elif output == 2:
             results = "$101K - $200K"
         elif output == 3:
