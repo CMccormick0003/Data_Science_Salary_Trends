@@ -55,5 +55,9 @@ def predict():
 
         return render_template("results.html", output=output, results=results)
 
+@app.route('/dsvisuals')
+def dsvisuals():
+    return render_template('dsvisuals.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

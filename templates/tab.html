@@ -3,7 +3,7 @@
 <head>
     
     <title>Tableau Document</title>
-
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
 </head>
 <body>
     <h1>Data jobs salaries and number of job openings in the US</h1>
@@ -35,5 +35,8 @@
      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
      </script> 
+
+    <a href="http://127.0.0.1:5000/" class="button">Return to Job Salary Calculator</a>
+
 </body>
 </html>
