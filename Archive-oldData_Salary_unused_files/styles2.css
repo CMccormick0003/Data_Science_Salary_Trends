@@ -1,0 +1,98 @@
+.grid-container h2 {
+    text-align: center;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(80, 135, 255);
+}
+
+.grid-container:nth-child(1) {
+    background-color: red;
+}
+
+.grid-container:nth-child(2) {
+    background-color: yellow;
+}
+
+.grid-container:nth-child(3) {
+    background-color: green;
+}
+
+.grid-container:nth-child(4) {
+    background-color: blue;
+}
+
+.form {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.fieldset {
+    border-radius: 60px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+.fieldset-red {
+    background-color: red;
+    color: white;
+}
+
+.fieldset-yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.fieldset-green {
+    background-color: green;
+    color: white;
+}
+
+.fieldset-blue {
+    background-color: blue;
+    color: white;
+}
+
+.inputbox {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    font-size: 24px;
+    box-shadow: rgba(101, 41, 255, 0.15) 0px 10px 20px;
+    color: rgb(252, 252, 252);
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    justify-self: center;
+    white-space: nowrap;
+    background: linear-gradient(104.74deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 30px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 16px 60px;
+    outline: none;
+    width: 100%;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.options {
+    font-size: 25px;
+}
