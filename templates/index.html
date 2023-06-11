@@ -18,52 +18,50 @@
     
     <header>
         <div class="container">
-            <h2>Data Related Jobs Salary Predictor</h2>
-            
+            <h2>DATA-RELATED JOBS SALARY PREDICTOR</h2>
             <div class="container">
         </div>
-        <h4><a href="/tab">Want more data? Click here to see source and modeling data in tableau dashboard.</a></h4>
-        <h4><a href="/moretableau">More tableau dashboard.</a></h4>
-        <h4><a href="/evenmoretableau">Even more tableau dashboard.</a></h4>
+        <h3>Curious for more data?  Check out these Tableau dashboards:<br>
+          <a href="/tab">Summary of full original dataset and rationale for forest regression model &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="/moretableau">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Details from full dataset (1Q2023, US only)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="/evenmoretableau">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Details from jobs in salary prediction model</a></h3>
     </header>                  
             <form action="/predict" method="POST" class="form">
                 <div class="fieldset">
                     <label>Experience Level (enter number)</label><br>
                         <div class = "options">
-                            Entry = 1 <br>
-                            Middle = 2<br> 
-                            Senior = 3<br> 
-                            Expert = 4<br>
+                            1 - Entry<br>
+                            2 - Middle<br> 
+                            3 - Senior<br> 
+                            4 - Executive<br>
                         </div>
                     <input class="inputbox" name="exp" type="number" min="1" max="4"/>
                 </div>
                 <div class="fieldset">
                     <label>Job Title (enter number)</label><br>
                         <div class = "options">
-                            1 Data Analyst <br>
-                            2 Data Engineer <br>
-                            3 Analytics Engineer<br>
-                            4 Machine Learning Engineer<br>
-                            5 Data Scientist<br>
-                            6 Data Architect<br>
+                            1 - Data Analyst <br>
+                            2 - Data Engineer <br>
+                            3 - Analytics Engineer<br>
+                            4 - Machine Learning Engineer<br>
+                            5 - Data Scientist<br>
+                            6 - Data Architect<br>
                         </div>
                     <input class="inputbox" name="job" type="number" max="6" min="1"/>
                 </div>
                 <div class="fieldset">
                     <label>Remote Ratio (Enter %)<br>
                         <div class = "options">
-                            Fully Remote = 100<br>
-                            Hybrid = 50<br>
-                            In Office = 0<br>
+                            100 - Fully Remote<br>
+                            50 - Hybrid<br>
+                            0 - In Office<br>
                     </div></label>
                     <input class="inputbox" name="remote" type="number"/>
                 </div>
                 <div class="fieldset">
                     <label>Company Size (enter number)<br>
                         <div class = "options">
-                            Small = 1<br>
-                            Medium = 2<br>
-                            Large = 3<br>
+                            1 - Small<br>
+                            2 - Medium<br>
+                            3 - Large<br>
                         </div></label>
                     <input class="inputbox" name="size" type="number" max="3" min="1"/>
                 </div>

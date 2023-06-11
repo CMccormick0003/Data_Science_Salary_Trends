@@ -72,12 +72,17 @@ p {
 }
 
 
-h1 {
+.h1 {
     color: rgb(255, 255, 0); 
     text-align: center;
   }
 
-  
+
+.h4 {
+    color: rgb(255, 255, 0); 
+    text-align: center;
+  }
+
 .inputbox{
     width: 200px;
 }
