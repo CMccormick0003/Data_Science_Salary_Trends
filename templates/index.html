@@ -9,13 +9,27 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            overflow: auto; 
         }
-    </style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            right: 0; /* Align to the right */
+            width: 75%;
+            text-align: center;
+            background-color: #74a2d9;
+            padding: 5px 0;
+            border-radius: 10px;
+        }
+
+    .footer h5 {
+            font-size: 15px;
+            color: #060000;
+            margin: 0;
+        }    </style>
 </head>
 <body>
     <h1>       Negotiate Compensation for Your Next Data Sciences Job<br>Enter job details & click Predict Salary to see the 2023 US salary range</h1>
-
-    
     <header>
         <div class="container">
             <h2>DATA-RELATED JOBS SALARY PREDICTOR</h2>
@@ -48,7 +62,7 @@
                     <input class="inputbox" name="job" type="number" max="6" min="1"/>
                 </div>
                 <div class="fieldset">
-                    <label>Remote Ratio (Enter %)<br>
+                    <label>Remote Ratio (enter %)<br>
                         <div class = "options">
                             100 - Fully Remote<br>
                             50 - Hybrid<br>
@@ -66,10 +80,11 @@
                     <input class="inputbox" name="size" type="number" max="3" min="1"/>
                 </div>
                 <input type="submit" class="button" value="Predict Salary">
-                <h5>Developed June 2023 as a project for Rutgers Data Visualization Bootcamp. Modeling data based on: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023 with last data update March 2023.</h5>
-            </form>
-        </div>
-    </body>
+            </form>       
 
+<div class="footer">
+<h5>Developed June 2023 as a project for Rutgers Data Visualization Bootcamp. Modeling data based on: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023 with last data update March 2023.</h5>
+<div>
+</body>
 </html>
 

@@ -69,5 +69,9 @@ def moretableau():
 def evenmoretableau():
     return render_template('evenmoretableau.html')
 
+@app.route('/totalcompinfo')
+def totalcompinfo():
+    return render_template('totalcompinfo.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
