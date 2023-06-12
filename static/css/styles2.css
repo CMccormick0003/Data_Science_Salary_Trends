@@ -7,7 +7,6 @@
     background-color: rgb(80, 185, 255);
 }
 
-
 .button {
     margin-top: 10px;
     font-size: 24px;
@@ -33,13 +32,32 @@
     opacity:0.5;
 }
 
+h1 {
+    font-size: 28pt;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 32pt;
+    font-weight: bold;
+    color: white;
+  }
 
 ul {
-    list-style-type: circle;
+    list-style-type: disc;
   }
 
 ul li {
-    font-size: 20pt !important;
-    color: darkblue !important;
+    font-size: 25pt;
+    color: rgb(6, 1, 57);
+    font-weight: bold;
   }
+
+  .important-item {
+    font-size: 35pt;
+    color: rgb(251, 247, 4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
