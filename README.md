@@ -2,6 +2,7 @@
 # Scope:  
 Build a model to predict data science salaries for US-based workers in 1Q2023.  Build an app to use the model for predictions.  
 Provide a resource for those who who work in data sciences and those that are entering the field to have knowledge of the current landscape trends.
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/6a1a94ff-e425-48b1-a7ad-74bd083730fa)
 
 # Source:  
 Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023. 
@@ -42,6 +43,10 @@ We inspected the csv.
 We used Python in a Jupyter notebook (***DataScientistRoles_DSRoles06052023.ipynb) 
 
 The original csv (ds_salaries.csv) was imported into the notebook and refined using Pandas.  Data were limited to preselected parameters.  Variables that were strings were coded to numerical codes to faciliate the machine learning. The job titles were grouped into categories.  Note, there were 93 job titles in the original dataset and this reduced to 44 for roles where the employee resided in the US.
+
+### Count of Job Titles in Original Dataset
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/ece7b5f7-ad0e-4255-8b44-638f76795250)
+
 ### work_year
 work_year was limited to 2023
 ### experience_level
@@ -136,53 +141,50 @@ The salary column is removed from the refined cav.
 company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
 Codes were stored in a new variable called company_size_code.
 
+### Data Analysis
+### Average salary per job title (original dataset)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/6cfa9fd0-1514-4cef-92d8-20aee2eb8cb3)
+
+### Bivariate analysis of the refined dataset to investiagte which fewatures to include in the model.
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/3f178139-3c47-4d53-9eca-58ff58af07a8)
+
+Tableau was used in a variety way to look at the data which preparing both models.  The app includes links to Tableau Public with visualizations of data from th original dataset and the model.
+
 ### Building the model
-Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The feature were reduced to 4 (job title, experience level, remote ratio and company size).  
+Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The features were reduced to 4 (job title, experience level, remote ratio and company size).  
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/37d92687-cf7f-410c-99ac-4de4f634648c)
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/acdf530f-cb19-4245-9348-e31e9f6468e4)
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/600e3cb6-cd13-4d95-b92a-bee39fc1d75b)
 
-, # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
-DSRoles_US_2023.csv
-Number of rows: 1565 rows
-Number of columns: 7 (index, employment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/13d52c15-5b75-4ab6-b330-9203d81f24d9)
 
-# limitation
-we don't know if the salary is salary only or includes other benefits, total compensation or salary only
+Model used 35% of data from the original dataset.  .  
+The model can predict a salary given four inputs (level of experience, job tile, remote percentage and company size)?  All inputs are codes.
 
-# Hypotheses - What questions do we plan to answer
-- What salary can you predict given a job title.  ***Given the 4 entries by the user, the model predicts a salary range.  Job experience, job tile, remote and company size
-- What titles can you predict given a salary range.  ** can't answer this with the 
-- What job level is predicted based on salary range  ** can't answer this with the
-
-
-# ANALYSES
-# Tableau stuff
-# MODELING - forest or logistic regression
-
-# learning
-initial model was linear regression, however since the y dependent variable was to be predicted into 8 binds or categories, we changed to a forange of rest plot.  The data we aim to predict for salary is categorical, not continuous (eg, range of $101,000 to $150,000, not $123,456)
+# Learnings from Building and Training the Model
+initial model was linear regression, however since the y dependent variable was to be predicted into 8 binds or categories, we changed to a forest plot.  The data we aim to predict for salary is categorical, not continuous (eg, range of $101,000 to $150,000, not $123,456)
 
 THe model was run several ways.  To work on improving accuracy of the model, we modified the model parameters by revising the grouping or revising which fields to include.  For example, the model was run with 8 categories for salaries in 50 K increments from 1 as <=50K USD to 8 as >=350K USD to be 4 categories in 100 K increments (1 as <= 100 K USD to 4 as >= 301K USD).  
 
-Another modification was shifting from 9 categories for job title (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other, and Scientist) to be 7 categories (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other) by combining Data Scientist and Scientist into one category.
+Another modification was shifting from 9 categories for job title (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other, and Scientist) to be 7 categories (Data Analyst, Data Architect, Data Engineer, Data Manager, Data Scientist, Developer, Other) by combining Data Scientist and Scientist into one category.  Furhter the job titles were reduced to 6, only the most common jobs in the dataset (data analyst, data engineer, analytics engineer, machine learning engineer, data scientist and data architect).  The only job title that is a combination of roles in the model is the ML role.
 
-We updated the model futher.  The job title were ungrouped and we used the following job titles where the joob name matched exactley to the terms below.  This reduced the dataframe from 15XX rows to XXX rows.
-- Analytics Engineer (n=XX)
-- Data Analyst (n=XX)
-- Data Architect (n=XX)
-- Data Engineer (n=XX)
-- Data Scientist (n=XX)
-- Machine Learning (includes job titles Machine Learning Engineer, ML Engineer, Machine Learning Infrastructure Engineer) (n=XX)
+# Web Development
+Flask and HTML were used to develop an app that runs in the development environment.
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/f03f177c-cf5e-467b-8c82-b6f7d8f920ac)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/f5e81443-d314-4643-be42-b6200dac80f7)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/fa2c409d-196d-4e48-b5eb-58370718fad3)
+### Sample Salary Predictions
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/3bcec812-f7fe-4bb4-9117-ad26a30c5be2)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/7f362921-c50c-408d-a9f7-85798dbb9fd1)
 
-# Prediction
-Explain development of Flask app
-Explain that user enters criteria 
-Explain that the website shows an output -- 
+# Limitations
+It is unclear if the reported salary in the dataset is total compensation or solely salary.  Time in position was not available so it is not known if the salary for that level of experience if for a person new to the position or someone who has been in it a long time.  To help users of the model predictor, an educational page was added to the app to describe what additional features are part of total compensation that they should consider.
 
-IMAGES
-Tableau - # jobs per job title from original data
-Tableau - show not balanced for some columns, reason why they were not included in the model
-model precision/accuracy/recall/F1 table
-from app, show data entry and predicted salary - example 1 data scientist, remote, entry level, big
-from app, show data entry and predicted salary - example 1 ML, zero remote, mid level, small
+# Future Considerations
+- Update the model with additional data in the for entry level and executive level roles for job roles other than data engineer.  Update model with data from the Kaggle (aijobs.net) dataset annually.  Consider inclusion of another dataset that may include employee skills, typical skills for the job role, duration of time in position, more contractor roles, more roles based in US where employer is ex-US, and other components of total compensation.
+- 
+### Data Sources:
+Original dataset:  https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023
+Figures in the app:  Index.html:  https://unsplash.com/photos/mcSDtbWXUZU, Results.html:  https://unsplash.com/photos/xuTJZ7uD7PI and https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg
+Figures in the presentation: Introduction slide: https://unsplash.com/photos/klMii3cR9iI, App Navigation slide:  https://unsplash.com/photos/oWrRxo9UdM4, Know your worth slide: https://unsplash.com/photos/-8a5eJ1-mmQ and https://unsplash.com/photos/5ZnS3wK6sUg, Data Sources slide:  https://unsplash.com/photos/64YrPKiguAE, Questions slide: https://unsplash.com/photos/IgUR1iX0mqM, 
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/a3fac443-4c81-40aa-9744-8aa855543140)
