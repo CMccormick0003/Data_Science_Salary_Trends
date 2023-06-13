@@ -4,12 +4,10 @@ Build a model to predict data science salaries for US-based workers in 1Q2023.  
 Provide a resource for those who who work in data sciences and those that are entering the field to have knowledge of the current landscape trends.
 
 # Source:  
-Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023, Per Kaggle, last update at time of download was 2 months prior, so assumption is that it includes data for 1Q2023.
-aijobs.net
-update*** database is updated annualy, last update was updated 2 months ago
-Based on updated date as per Kaggle and the date accessed, we assumed the database included data from Jan 2023 to Mar 2023 (1Q2023)
-Data are based on user submission of job/salary information.
-Original csv: ds_strings.csv
+Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023. 
+
+Based on updated date as per Kaggle and the date accessed, we assumed the database included data from Jan 2023 to Mar 2023 (1Q2023).
+Data are based on self user submission of job/salary information to aijobs.net.  The original csv is ds_strings.csv.
 
 #  Packages:
 Pandas, Python, Flask, Tableau, Scikit-Learn, Matplotlib
