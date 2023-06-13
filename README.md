@@ -1,8 +1,10 @@
-# Data_Science_Salary_Trends
-Modeling of data science salaries for US-based workers in 1Q2023
+# Data Scientist Salary Predictor
+# Scope:  
+Build a model to predict data science salaries for US-based workers in 1Q2023.  Build an app to use the model for predictions.  
+Provide a resource for those who who work in data sciences and those that are entering the field to have knowledge of the current landscape trends.
 
 # Source:  
-Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023
+Kaggle: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023, accessed 31May2023, Per Kaggle, last update at time of download was 2 months prior, so assumption is that it includes data for 1Q2023.
 aijobs.net
 update*** database is updated annualy, last update was updated 2 months ago
 Based on updated date as per Kaggle and the date accessed, we assumed the database included data from Jan 2023 to Mar 2023 (1Q2023)
