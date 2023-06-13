@@ -136,7 +136,13 @@ The salary column is removed from the refined cav.
 company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
 Codes were stored in a new variable called company_size_code.
 
-### Refined csv:   UPDATE THIS, EXPLAIN PROCESS OF REFINING -- csv 1565 rows, 8 job titles but model was under 20%.  Updated to 6 titles, # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
+### Building the model
+Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The feature were reduced to 4 (job title, experience level, remote ratio and company size).  
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/37d92687-cf7f-410c-99ac-4de4f634648c)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/acdf530f-cb19-4245-9348-e31e9f6468e4)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/600e3cb6-cd13-4d95-b92a-bee39fc1d75b)
+
+, # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
 DSRoles_US_2023.csv
 Number of rows: 1565 rows
 Number of columns: 7 (index, employment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
