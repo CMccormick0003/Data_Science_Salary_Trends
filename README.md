@@ -35,6 +35,7 @@ CSV includes 11 columns and 3755 rows.
 
 ### Summary of Data Volume per Step
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/120b60eb-4d6a-4bd4-acdf-30fadd8a7e21)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/4b6901bf-1023-4d0b-8887-36af7cf875fa)
 
 # Dataset refinement
 We inspected the csv.
