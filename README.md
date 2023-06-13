@@ -42,6 +42,10 @@ We inspected the csv.
 We used Python in a Jupyter notebook (***DataScientistRoles_DSRoles06052023.ipynb) 
 
 The original csv (ds_salaries.csv) was imported into the notebook and refined using Pandas.  Data were limited to preselected parameters.  Variables that were strings were coded to numerical codes to faciliate the machine learning. The job titles were grouped into categories.  Note, there were 93 job titles in the original dataset and this reduced to 44 for roles where the employee resided in the US.
+
+### Count of Job Titles in Original Dataset
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/ece7b5f7-ad0e-4255-8b44-638f76795250)
+
 ### work_year
 work_year was limited to 2023
 ### experience_level
