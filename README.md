@@ -140,11 +140,22 @@ The salary column is removed from the refined cav.
 company_size (S, M, and L) for small, medium and large were coded to 1, 2, and 3
 Codes were stored in a new variable called company_size_code.
 
+### Data Analysis
+Average salary per job title (original dataset)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/6cfa9fd0-1514-4cef-92d8-20aee2eb8cb3)
+
+Bivariate analysis of the refined dataset to investiagte which fewatures to include in the model.
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/3f178139-3c47-4d53-9eca-58ff58af07a8)
+
+Tableau was used in a variety way to look at the data which preparing both models.
+
 ### Building the model
-Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The feature were reduced to 4 (job title, experience level, remote ratio and company size).  
+Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The features were reduced to 4 (job title, experience level, remote ratio and company size).  
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/37d92687-cf7f-410c-99ac-4de4f634648c)
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/acdf530f-cb19-4245-9348-e31e9f6468e4)
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/600e3cb6-cd13-4d95-b92a-bee39fc1d75b)
+
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/13d52c15-5b75-4ab6-b330-9203d81f24d9)
 
 , # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
 DSRoles_US_2023.csv
