@@ -10,14 +10,14 @@ Based on updated date as per Kaggle and the date accessed, we assumed the databa
 Data are based on self user submission of job/salary information to aijobs.net.  The original csv is ds_strings.csv.
 
 #  Packages:
-Pandas, Python, Flask, Tableau, Scikit-Learn, Matplotlib
+Pandas, Python (Path, Flask, pickle), Tableau, Scikit-Learn, Matplotlib, HTML, CSS, PowerPoint, Microsoft csv, GitHub
 
 # Team members:
 Calogera McCormick, Aaron Lilleoien, Minta Burke, Sana Ayubzai, Tawn Scotton
 
-# Hypotheses
 # Project Parts: Cleaning, Analyis, Modeling, Prediction
 
+# Cleaning
 # Dataset description
 original csv: ds_salaries.csv
 CSV includes 11 columns and 3755 rows.
@@ -32,6 +32,9 @@ CSV includes 11 columns and 3755 rows.
 - remote_ratio: The overall amount of work done remotely
 - company_location: The country of the employer's main office or contracting branch
 - company_size: The median number of people that worked for the company during the year
+
+### Summary of Data Volume per Step
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/120b60eb-4d6a-4bd4-acdf-30fadd8a7e21)
 
 # Dataset refinement
 We inspected the csv.
