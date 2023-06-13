@@ -147,7 +147,7 @@ Average salary per job title (original dataset)
 Bivariate analysis of the refined dataset to investiagte which fewatures to include in the model.
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/3f178139-3c47-4d53-9eca-58ff58af07a8)
 
-Tableau was used in a variety way to look at the data which preparing both models.
+Tableau was used in a variety way to look at the data which preparing both models.  The app includes links to Tableau Public with visualizations of data from th original dataset and the model.
 
 ### Building the model
 Model accuracy was under 20% with the refined csv.  This was perfomred with logistic regression and a forest model.  Several modifications were made and the final forest model used 6 job titles and 4 bins for salary.  The features were reduced to 4 (job title, experience level, remote ratio and company size).  
@@ -157,22 +157,14 @@ Model accuracy was under 20% with the refined csv.  This was perfomred with logi
 
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/13d52c15-5b75-4ab6-b330-9203d81f24d9)
 
-, # rows approximaltey 1300, Lesson learned, removing 260 rows imporoved accuracy by 60%
-DSRoles_US_2023.csv
-Number of rows: 1565 rows
-Number of columns: 7 (index, employment_type_code, xperience_level_code, job category_code, salary_in_usd_code, company_size_code, remote_ratio)
+Model used 35% of data from the original dataset.  .  
 
-# limitation
-we don't know if the salary is salary only or includes other benefits, total compensation or salary only
+# Limitations
+It is unclear if the reported salary in the dataset is total compensation or solely salary.  Time in position was not available so it is not known if the salary for that level of experience if for a person new to the position or someone who has been in it a long time.  To help users of the model predictor, an educational page was added to the app to describe what additional features are part of total compensation that they should consider.
 
-# Hypotheses - What questions do we plan to answer
-- What salary can you predict given a job title.  ***Given the 4 entries by the user, the model predicts a salary range.  Job experience, job tile, remote and company size
-- What titles can you predict given a salary range.  ** can't answer this with the 
-- What job level is predicted based on salary range  ** can't answer this with the
+# Goal:  
+Can the model predict a salary given four inputs (level of experience, job tile, remote percentage and company size)?  All inputs are codes.
 
-
-# ANALYSES
-# Tableau stuff
 # MODELING - forest or logistic regression
 
 # learning
