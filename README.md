@@ -175,6 +175,7 @@ Flask and HTML were used to develop an app that runs in the development environm
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/fa2c409d-196d-4e48-b5eb-58370718fad3)
 ### Sample Salary Predictions
 ![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/3bcec812-f7fe-4bb4-9117-ad26a30c5be2)
+![image](https://github.com/CMccormick0003/Data_Science_Salary_Trends/assets/120672518/7f362921-c50c-408d-a9f7-85798dbb9fd1)
 
 # Limitations
 It is unclear if the reported salary in the dataset is total compensation or solely salary.  Time in position was not available so it is not known if the salary for that level of experience if for a person new to the position or someone who has been in it a long time.  To help users of the model predictor, an educational page was added to the app to describe what additional features are part of total compensation that they should consider.
