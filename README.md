@@ -179,6 +179,9 @@ Flask and HTML were used to develop an app that runs in the development environm
 # Limitations
 It is unclear if the reported salary in the dataset is total compensation or solely salary.  Time in position was not available so it is not known if the salary for that level of experience if for a person new to the position or someone who has been in it a long time.  To help users of the model predictor, an educational page was added to the app to describe what additional features are part of total compensation that they should consider.
 
+# Future Considerations
+- Update the model with additional data in the for entry level and executive level roles for job roles other than data engineer.  Update model with data from the Kaggle (aijobs.net) dataset annually.  Consider inclusion of another dataset that may include employee skills, typical skills for the job role, duration of time in position, more contractor roles, more roles based in US where employer is ex-US, and other components of total compensation.
+- 
 ### Data Sources:
 Original dataset:  https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023
 Figures in the app:  Index.html:  https://unsplash.com/photos/mcSDtbWXUZU, Results.html:  https://unsplash.com/photos/xuTJZ7uD7PI and https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg
